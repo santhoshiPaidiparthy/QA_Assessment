@@ -44,7 +44,7 @@ Open the terminal and go to test folder and run `mocha -t 50000 <your test filen
 
 Write a test to:
 
- * Submit an order for an Apple iPhone4s 16GB SIM-Free – Black (known issue with State drop-down, selecting Country is adequate) and verify the Total Price: given is correct (assume shipping cost is correct based on your choice). You may assume prices shown on product pages are the correct price.
+ * Submit an order for an Apple iPhone4s 16GB SIM-Free â€“ Black (known issue with State drop-down, selecting Country is adequate) and verify the Total Price: given is correct (assume shipping cost is correct based on your choice). You may assume prices shown on product pages are the correct price.
    * Related files: [orderIphoneTest.js](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/test/orderIphoneTest.js)
  * Verify updating your account details is saved and retrieved after logging out and back in using the My Account link.
    * Related files: [accntUpdateTest.js](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/test/accntUpdateTest.js)
@@ -63,10 +63,10 @@ write a test to:
 
 ##Code Anlysis/White-box Testing
 
-  Please find the explanation here [WhiteBoxTesting.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/WhiteBoxTesting.md) 
+  Please find documentation here [WhiteBoxTesting.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/WhiteBoxTesting.md) 
 
 ##Specification Review Excercise
 
-  Please find the explanation here [SpecificationReview.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/SpecificationReview.md) 
+  Please find documentation here [SpecificationReview.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/SpecificationReview.md) 
 
  
