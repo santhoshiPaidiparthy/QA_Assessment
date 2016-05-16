@@ -51,7 +51,7 @@
   * How does the `CSR` navigate to `edit profile` page for a user?
   * How does users navigate to the `change password` page?
 
- I would ask above three questions. These are would answer the missing links while navigaing between different pages. This will help in starting with basic pag structure design/development.
+ I would ask above three questions. These will provide information about the missing links while navigaing between different pages. This will help in starting with basic page structure design/development.
 
   
 
