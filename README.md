@@ -63,7 +63,7 @@ write a test to:
 
 ##Code Anlysis/White-box Testing
 
-  Please find the explanation here []() 
+  Please find the explanation here [https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/WhiteBoxTesting.md](WhiteBoxTesting.md) 
 
 ##Specification Review Excercise
 

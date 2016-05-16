@@ -20,6 +20,7 @@
 
 ```
 public TestAddrecipientscanRecieveMessageFunction()
+
 {
 //Create test users
  User recipient = new User (‘user123’);
