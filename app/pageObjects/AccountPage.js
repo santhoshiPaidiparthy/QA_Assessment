@@ -121,7 +121,7 @@ class AccountPage{
 
 
 	/**
-	 * Finds your details button element on account page and clicks it.
+	 * Finds save profile button element on account page and clicks it.
 	 */
 	clickSaveProfile(){
 
