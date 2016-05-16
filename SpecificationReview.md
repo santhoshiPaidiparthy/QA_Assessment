@@ -5,7 +5,7 @@
 
 ### List of questions
 
-##### Change Password
+#### Change Password
 
   * How can `Change Password` have the same behavior for both `user` and `CSR`?
     * From the screen shot for reset password, it prompts for new password/confirm passwor. CSR should have a different option, Ex: To send a reset link to the user.
