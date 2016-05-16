@@ -45,7 +45,8 @@
 
   Imagine that the Product Manager is about to leave on a months holiday, and the feature will be implemented and shipped while she is away. She is in a hurry and has to leave work to catch her flight in 10 minutes.
   From your list, choose 3-5 questions that you believe are the most important for her to answer before she leaves. Justify your choices. Why did you select those questions? What answers do you expect to receive? How would you expect the answers to affect the development work?
-
+  
+### List of questions
 
   * What is the difference between `writable users` and `users`? How does `Change password` behaviour differ for `writable user` and `user`?
   * How does the `CSR` navigate to `edit profile` page for a user?
