@@ -8,7 +8,7 @@
 var q               = require('q'),
     logger          = require('nodejslogger'),
     config          = require('../config/config.js'),
-    testData         = require('../app/testData/testData.js');
+    testConstants   = require('../app/testConstants/testConstants.js');
 
 /**
  * Helper method for sending a requests and returning a promise
@@ -47,11 +47,11 @@ function doRequest(method, request) {
 function checkLocationInNearestStations(fuelStations){
 
 	var stationDetails = '';
-	var stationName = testData.CHECKSTATION;
+	var stationName = testConstants.CHECKSTATION;
 
 	fuelStations.map(function(item,index){
 
-	if((item.station_name).trim() == stationName)
+		if((item.station_name).trim() == stationName)
 	{
 
 		stationDetails =  {"id" : item.id, "stationName" : item.station_name}
@@ -75,7 +75,7 @@ function checkLocationInNearestStations(fuelStations){
 
 function getNearestQueryUrl(){
 
-	var queryUrl = config.NEARESTSTATIONURL + config.APIKEY +'&location=' + testData.LOCATION + '&ev_network='+ testData.EVNETWORK;	  
+	var queryUrl = config.NEARESTSTATIONURL + config.APIKEY +'&location=' + testConstants.LOCATION + '&ev_network='+ testConstants.EVNETWORK;	  
 	return queryUrl;
 }
 
@@ -90,7 +90,7 @@ function getNearestQueryUrl(){
 
 function getStationByIdUrl(stationId) {
 
-       	var queryUrl = config.ENDPOINTURL + stationId + '.json?api_key=' + config.APIKEY;	 // Example: https://api.data.gov/nrel/alt-fuel-stations/v1/:id.format?api_key=<yourApiKey> 
+	var queryUrl = config.ENDPOINTURL + stationId + '.json?api_key=' + config.APIKEY;	 // Example: https://api.data.gov/nrel/alt-fuel-stations/v1/:id.format?api_key=<yourApiKey> 
 	return queryUrl;
 
 }

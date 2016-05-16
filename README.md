@@ -25,7 +25,7 @@ After cloning this repository, install the dependencies:
    
    * `app` directory that contains executable code
       *  `app/pageObjects` has all the page objects
-      *  `app/testData` has the data used for tests
+      *  `app/testConstants` has the data used for tests
 
    * `test` directory that has Mocha tests
    * `config` directory has config files
@@ -35,7 +35,7 @@ After cloning this repository, install the dependencies:
 ### Running the tests 
 
 
-Update the [testData.js](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/app/testData/testData.js) with the test data you would like to test against.
+Update the [testConstants.js](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/app/testData/testConstants.js) with the test data you would like to test against.
 
 Open the terminal and go to test folder and run `mocha -t 50000 <your test filename>` Ex : `mocha -t 50000 accntUpdateTest.js`
 
@@ -67,6 +67,6 @@ write a test to:
 
 ##Specification Review Excercise
 
-  Please find the explanation here [Specification_Analysis.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/Specification_Analysis.md) 
+  Please find the explanation here [SpecificationReview.md](https://github.com/santhoshiPaidiparthy/QA_Assessment/blob/master/SpecificationReview.md) 
 
  

@@ -13,7 +13,7 @@ var assert             = require('assert'),
     ProductResultsPage = require('../app/pageObjects/ProductResultsPage.js'),
     CheckOutPage       = require('../app/pageObjects/CheckOutPage.js'),
     PaymentPage        = require('../app/pageObjects/PaymentPage.js'),
-    testData           = require('../app/testData/testData.js'),
+    testConstants      = require('../app/testConstants/testConstants.js'),
     LogInPage          = require('../app/pageObjects/LogInPage.js'),
     LogOutPage         = require('../app/pageObjects/LogOutPage.js'),
     AccountPage        = require('../app/pageObjects/AccountPage.js'),
@@ -34,7 +34,7 @@ describe('Update user account profile Test', function() {
 
 	it('Login -> update -> logout -> should have updated values', function(done) {
 
-		driver.get('http://store.demoqa.com');
+		driver.get(testConstants.TESTURL);
 
 		var home = new HomePage(driver);
 		var login = new LogInPage(driver);
@@ -45,10 +45,10 @@ describe('Update user account profile Test', function() {
 		home.MyAccount().click();
 
 		/*Go to Login page and enter credentials and click login*/
-		login.enterUserName(testData.USERNAME)
+		login.enterUserName(testConstants.USERNAME)
 		.then(function(){
 
-			login.enterPassword(testData.PASSWORD)
+			login.enterPassword(testConstants.PASSWORD)
 			.then(function(){
 
 				login.clickLoginButton()
@@ -63,7 +63,7 @@ describe('Update user account profile Test', function() {
 						.then(function(){
 							//Update FirstName
 							setTimeout(function(){
-								accnt.updateFirstName(testData.FIRSTNAME)
+								accnt.updateFirstName(testConstants.FIRSTNAME)
 								.then(function(){
 									setTimeout(function(){
 										//click save profile
@@ -75,10 +75,10 @@ describe('Update user account profile Test', function() {
 											.then(function(){
 
 												//Log back in
-												login.enterUserName(testData.USERNAME)
+												login.enterUserName(testConstants.USERNAME)
 												.then(function(){
 
-													login.enterPassword(testData.PASSWORD)
+													login.enterPassword(testConstants.PASSWORD)
 													.then(function(){
 
 														login.clickLoginButton()
@@ -87,7 +87,7 @@ describe('Update user account profile Test', function() {
 															accnt.getFirstNameValue()
 															.then(function(value){
 
-																expect(value).to.equal(testData.FIRSTNAME) // check the returned firstName value with the expected firstname                                                                                                                                 
+																expect(value).to.equal(testConstants.FIRSTNAME) // check the returned firstName value with the expected firstname                                                                                                                                 
 																/*For every 'it' that needs to wait for a response value, we will inject a 'done' callback and call 
 																 * it only when our expectations were exceuted. This way mocha knows it needs to wait for some of the expectations.
 																 */	

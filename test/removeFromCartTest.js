@@ -16,7 +16,7 @@ var assert             = require('assert'),
     ProductResultsPage = require('../app/pageObjects/ProductResultsPage.js'),
     CheckOutPage       = require('../app/pageObjects/CheckOutPage.js'),
     PaymentPage        = require('../app/pageObjects/PaymentPage.js'),
-    testData           = require('../app/testData/testData.js'),
+    testConstants      = require('../app/testConstants/testConstants.js'),
     expect             = require("chai").expect;
 
 
@@ -39,7 +39,7 @@ describe('Remove items from cart - test', function(){
 		it('cart should be empty, and a message saying the same should be displayed', function(done) {
 
 
-			driver.get('http://store.demoqa.com');
+			driver.get(testConstants.TESTURL);
 
 			var home = new HomePage(driver);
 			var CheckoutCart = new CheckOutPage(driver);
@@ -67,7 +67,7 @@ describe('Remove items from cart - test', function(){
 							CheckoutCart.checkEntryContent()
 							.then(function(value){
 
-								expect(value).to.equal(testData.EMPTYCARTMESSAGE);
+								expect(value).to.equal(testConstants.EMPTYCARTMESSAGE);
 
 								/*For every 'it' that needs to wait for a response value, we will inject a 'done' callback and call 
 								 * it only when our expectations were exceuted. This way mocha knows it needs to wait for some of the expectations.

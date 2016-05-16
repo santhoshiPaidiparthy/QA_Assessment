@@ -13,7 +13,7 @@
 var expect 		= require('chai').expect,
     request		= require('request'),
     logger              = require('nodejslogger'),
-    testData            = require('../app/testData/testData.js'),
+    testConstants       = require('../app/testConstants/testConstants.js'),
     util                = require('../util/util.js');
 
 
@@ -121,10 +121,10 @@ return util.doRequest("GET", req)
 	stationAddressState  = body.alt_fuel_station.state;
 
 	//compare the retrived values for address with the expected values
-	expect(stationAddressStreet.trim()).to.equal(testData.STATIONADDRESSSTREET);
-	expect(stationAddressCity.trim()).to.equal(testData.STATIONADDRESSCITY);
-	expect(stationAddressZip.trim()).to.equal(testData.STATIONADDRESSZIP);
-	expect(stationAddressState.trim()).to.equal(testData.STATIONADDRESSSTATE);
+	expect(stationAddressStreet.trim()).to.equal(testConstants.STATIONADDRESSSTREET);
+	expect(stationAddressCity.trim()).to.equal(testConstants.STATIONADDRESSCITY);
+	expect(stationAddressZip.trim()).to.equal(testConstants.STATIONADDRESSZIP);
+	expect(stationAddressState.trim()).to.equal(testConstants.STATIONADDRESSSTATE);
 
 	done();
 })

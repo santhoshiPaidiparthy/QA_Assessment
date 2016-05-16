@@ -16,7 +16,7 @@ var assert             = require('assert'),
     ProductResultsPage = require('../app/pageObjects/ProductResultsPage.js'),
     CheckOutPage       = require('../app/pageObjects/CheckOutPage.js'),
     PaymentPage        = require('../app/pageObjects/PaymentPage.js'),
-    testData           = require('../app/testData/testData.js'),
+    testConstants      = require('../app/testConstants/testConstants.js'),
     expect             = require("chai").expect;
 
 
@@ -42,7 +42,7 @@ describe('Order iPhone', function(){
 		it('Country USA should have total price $282.00 (shipping+actual)', function(done) {
 
 
-			driver.get(testData.TESTURL);
+			driver.get(testConstants.TESTURL);
 
 			var home = new HomePage(driver);
 
@@ -63,7 +63,7 @@ describe('Order iPhone', function(){
 
 						/*Choose the country passed into SelectCountry method*/ 
 						var PayPage = new PaymentPage(driver);
-						PayPage.SelectCountry(testData.COUNTRY1)  //testData.PRICE1 --> check testData.js file for this value
+						PayPage.SelectCountry(testConstants.COUNTRY1)  //testConstants.PRICE1 --> check testConstants.js file for this value
 						.then(function(){ 
 
 							/*Once the desired country is selected, click on calculate button to calculate the total price(shipping + product price)*/
@@ -77,7 +77,7 @@ describe('Order iPhone', function(){
 									var number = Number(value.replace(/[^0-9\.]+/g,""));
 
 									// check the returned price with the expected price 
-									expect(number).to.equal(Number(testData.PRICE1)); //testData.PRICE1 --> check testData.js file for this value
+									expect(number).to.equal(Number(testConstants.PRICE1)); //testConstants.PRICE1 --> check testConstants.js file for this value
 
 
 									/*For every 'it' that needs to wait for a response value, we will inject a 'done' callback and call 
@@ -123,7 +123,7 @@ describe('Order iPhone', function(){
 
 		it('Country sudan should have total price $284.00 (shipping+actual)', function(done) {
 
-			driver.get(testData.TESTURL);
+			driver.get(testConstants.TESTURL);
 
 			var home = new HomePage(driver);
 			//driver.waitforpagetoload(driver);
@@ -144,7 +144,7 @@ describe('Order iPhone', function(){
 
 						/*Choose the country passed into SelectCountry method*/ 
 						var PayPage = new PaymentPage(driver);
-						PayPage.SelectCountry(testData.COUNTRY2)
+						PayPage.SelectCountry(testConstants.COUNTRY2)
 						.then(function(){ 
 
 							/*Once the desired country is selected, click on calculate button to calculate the total price(shipping + product price)*/
@@ -156,7 +156,7 @@ describe('Order iPhone', function(){
 								.then(function(value){
 									var number = Number(value.replace(/[^0-9\.]+/g,""));
 									//console.log("number" , number);
-									expect(number).to.equal(Number(testData.PRICE2)); // check the returned price with the expected price
+									expect(number).to.equal(Number(testConstants.PRICE2)); // check the returned price with the expected price
 
 									/*For every 'it' that needs to wait for a response value, we will inject a 'done' callback and call 
 									 * it only when our expectations were exceuted. This way mocha knows it needs to wait for some of the expectations.
@@ -200,7 +200,7 @@ describe('Order iPhone', function(){
 
 		it('Country sudan should not have total price $150.00 (shipping+actual)', function(done) {
 
-			driver.get(testData.TESTURL);
+			driver.get(testConstants.TESTURL);
 
 			var home = new HomePage(driver);
 			//driver.waitforpagetoload(driver);
@@ -221,7 +221,7 @@ describe('Order iPhone', function(){
 
 						/*Choose the country passed into SelectCountry method*/ 
 						var PayPage = new PaymentPage(driver);
-						PayPage.SelectCountry(testData.COUNTRY2)
+						PayPage.SelectCountry(testConstants.COUNTRY2)
 						.then(function(){ 
 
 							/*Once the desired country is selected, click on calculate button to calculate the total price(shipping + product price)*/
@@ -233,7 +233,7 @@ describe('Order iPhone', function(){
 								.then(function(value){
 									var number = Number(value.replace(/[^0-9\.]+/g,""));
 									//console.log("number" , number);
-									expect(number).to.equal(Number(testData.PRICE3)); // check the returned price with the expected price
+									expect(number).to.equal(Number(testConstants.PRICE3)); // check the returned price with the expected price
 
 									/*For every 'it' that needs to wait for a response value, we will inject a 'done' callback and call 
 									 * it only when our expectations were exceuted. This way mocha knows it needs to wait for some of the expectations.
