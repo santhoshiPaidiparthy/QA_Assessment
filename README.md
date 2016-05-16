@@ -37,7 +37,7 @@ After cloning this repository, install the dependencies:
 
 Update the [](testData.js) with the test data you would like to test against.
 
-Open the terminal and go to [](test) folder and run mocha -t 50000 <your test filename> Ex : mocha -t 50000 accntUpdateTest.js
+Open the terminal and go to [](test) folder and run `mocha -t 50000 <your test filename>` Ex : `mocha -t 50000 accntUpdateTest.js`
 
 
 ###Automation Excercise part 1
@@ -56,9 +56,9 @@ Write a test to:
 
 write a test to:
 
-* Query for nearest stations to Austin, TX that are part of the “ChargePoint Network”. Verify that “HYATT AUSTIN” appears in the results. Store/save the Station Id of the HYATT AUSTIN station.
+* Query for nearest stations to `Austin, TX` that are part of the `ChargePoint Network`. Verify that `HYATT AUSTIN` appears in the results. Store/save the Station Id of the HYATT AUSTIN station.
   * Related files: [](apiTest.js)
-* Use the Station ID from previous test to query the API and return the Street Address of that station. Verify the Station Address is 208 Barton Springs, Austin, Texas, USA, 78704
+* Use the `Station ID` from previous test to query the API and return the `Street Address` of that station. Verify the Station Address is `208 Barton Springs, Austin, Texas, USA, 78704`
   * Related files: [](apiTest.js)
 
 ##Code Anlysis/White-box Testing

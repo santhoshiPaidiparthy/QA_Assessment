@@ -1,0 +1,23 @@
+{
+  "name": "homeaway_qa_screen",
+  "version": "1.0.0",
+  "description": "qa assessment test suite",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Santhoshi paidiparthy",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.4",
+    "mocha": "^2.4.5",
+    "nodejslogger": "^1.2.1",
+    "q": "^1.4.1",
+    "request": "^2.72.0",
+    "selenium-webdriver": "^2.53.2"
+  }
+}
