@@ -1,4 +1,4 @@
-**
+/**
  * ClassName  : CheckOutPage
  * Author     : Santhoshi Paidiparthy
  * Date       : 05/14/2016
