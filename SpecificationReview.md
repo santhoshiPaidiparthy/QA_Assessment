@@ -20,7 +20,7 @@
 
   * How does the `CSR` navigate to `edit profile` page for a user?
 
-  * How does `edit profile` look for CSR user? Does it have additional option for Different user profile access?
+  * How does `edit profile` look for CSR user? Does it have additional options for different user profile access?
 
   * Are there any required fields on edit profile page?
   
@@ -28,17 +28,17 @@
 
 #### Sign up Page
 
-  * What kind of information should a `writable usr` and other `user` provide when signing up?
+  * What kind of information should `writable user` and other `user` provide when signing up?
 
 #### Settings Page  
 
   * Clicking on remove linked account what will result ? 
 
-  * How can I link it back if it is removed ? where will be that option available in settings?
+  * How can I link the facebook account back if it is removed ? where will be that option available in settings?
 
   * Can CSR user remove the linked account and deactivate profile ?
 
-  * What happens if I signed in using facebook account and removed the link in the settings page ? Does it mean account with the home away deleted ?  or homeAway login  will be operating independently with same login credentials of facebook?
+  * What happens if I signed in using facebook account and removed the link in the settings page ? Does it mean account with the home away gets deleted ?  or homeAway login  will be operating independently with same login credentials of facebook?
 
 
 ## Question2
